@@ -1,0 +1,28 @@
+{
+    "name": "azcpavel/exceptio-booking-wordpress",
+    "description": "Wordpress Plugins To Enable Booking System",
+    "license": "GPLv2",
+    "authors": [
+        {
+            "name": "Ahsan Zahid Chowdhury",
+            "email": "azc.pavel@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Exceptio\\BookingWordpress\\": "src/"
+        },
+        "files": [
+            "classes/ExceptioBookingWordpress_Admin.php",
+            "classes/ExceptioBookingWordpress_Cron.php",
+            "includes/functions-helper.php",
+            "includes/request.php"
+        ]
+    },
+    "extra": {
+        
+    }
+}
