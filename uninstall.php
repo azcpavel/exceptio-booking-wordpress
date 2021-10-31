@@ -19,13 +19,7 @@ Go on with uninstall actions:
 
 // Remove options
 $arr_options = array(
-     'robismslogin_username',
-     'robismslogin_password',
-     'robismslogin_from',
-     'robismslogin_domain',
-     'robismslogin_otp_resend_time',
-     'robismslogin_otp_resend_max',
-     'robismslogin_hide_email',
+    //
 );
 
 foreach ($arr_options as $one_option) {
@@ -35,7 +29,7 @@ foreach ($arr_options as $one_option) {
 global $wpdb;
 
 // Remove database tables
-$table_name = $wpdb->prefix . 'robismslogin_otp';
+$table_name = $wpdb->prefix . 'exceptiobookingwordpress_settings';
 $wpdb->query("DROP TABLE IF EXISTS $table_name");
 
 
